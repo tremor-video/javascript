@@ -13,10 +13,55 @@
   // Define globals exposed by Node.js.
   "node": true,
 
+  "maxerr": 1000,
+  "browserify": true,
+  "couch": false,
+  "devel": true,
+  "dojo": false,
+  "mocha": true,
+  "mootools": false,
+  "prototypejs": false,
+  "rhino": false,
+  "globals": {
+    "React": false,
+    "Backbone": false,
+    "_": false,
+    "Handlebars": false,
+    "d3": false,
+    "numeral": false,
+    "moment": false,
+    "purl": false,
+    "nv": false,
+    "Slick": false,
+    "Select2": false,
+    "popover": false
+  },
   /*
    * ENFORCING OPTIONS
    * =================
    */
+
+	// This option lets you set the max number of formal parameters allowed per function
+	"maxparams": 8,
+	// This option lets you control how nested do you want your blocks to be
+	"maxdepth": 4,
+	// This option lets you control cyclomatic complexity throughout your code
+	"maxcomplexity": 10,
+	// This option suppresses warnings about the debugger statements in your code
+	"maxstatements": 30,
+	"debug": false,
+	"bitwise": false,
+	"curly": true,
+	"forin": false,
+	"immed": false,
+	"loopfunc": false,
+	"noarg": true,
+	"scripturl": true,
+	"shadow": false,
+	"supernew": false,
+	"noempty": true,
+	"nonew": true,
+	"plusplus": false,
 
   // Force all variable names to use either camelCase style or UPPER_CASE
   // with underscores.
